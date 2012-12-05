@@ -1,0 +1,71 @@
+# 256color terminals
+term screen-256color
+
+# detach on hangup
+autodetach on
+
+# kill the start up message
+startup_message off
+
+# don't separate copied lines by <cr><lf>
+crlf off
+
+# single user screen
+multiuser off
+
+# larger scrollback
+defscrollback 5000
+
+# set shell
+shell /bin/bash
+
+# termcap stuff
+termcapinfo  * '' 'hs:ts=\E_:fs=\E\\:ds=\E_\E\\'
+termcap  xterm hs@:cs=\E[%i%d;%dr:im=\E[4h:ei=\E[4l
+terminfo xterm hs@:cs=\E[%i%p1%d;%p2%dr:im=\E[4h:ei=\E[4l
+termcapinfo  xterm Z0=\E[?3h:Z1=\E[?3l:is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l
+termcapinfo xterm* OL=10000
+termcapinfo rxvt-256-color 'VR=\E[?5h:VN=\E[?5l'
+termcapinfo rxvt-256-color 'k1=\E[11~:k2=\E[12~:k3=\E[13~:k4=\E[14~'
+termcapinfo rxvt-256-color 'kh=\EOH:kI=\E[2~:kD=\E[3~:kH=\EOF:kP=\E[5~:kN=\E[6~'
+termcapinfo rxvt-256-color 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+termcapinfo rxvt-256-color 'vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l'
+termcapinfo rxvt-256-color 'XC=K%,%\E(B,[\304,\\\\\326,]\334,{\344,|\366,}\374,~\337'
+termcapinfo rxvt-256-color be
+termcapinfo xterm|xterms|xs ti@:te=\E[2J
+termcapinfo wy75-42 xo:hs@
+termcapinfo wy* CS=\E[?1h:CE=\E[?1l:vi=\E[?25l:ve=\E[?25h:VR=\E[?5h:VN=\E[?5l:cb=\E[1K:CD=\E[1J
+termcapinfo  hp700 'Z0=\E[?3h:Z1=\E[?3l:hs:ts=\E[62"p\E[0$~\E[2$~\E[1$}:fs=\E[0}\E[61"p:ds=\E[62"p\E[1$~\E[61"p:ic@'
+termcap  vt100* ms:AL=\E[%dL:DL=\E[%dM:UP=\E[%dA:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC
+terminfo vt100* ms:AL=\E[%p1%dL:DL=\E[%p1%dM:UP=\E[%p1%dA:DO=\E[%p1%dB:LE=\E[%p1%dD:RI=\E[%p1%dC
+termcapinfo linux C8
+
+# for 256 color
+attrcolor b ".I"
+termcapinfo rxvt-256-color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# keybinds
+# f7 previous screen, f8 next screen
+bindkey -k k7 prev
+bindkey -k k8 next
+
+# f1 to detach
+bindkey -k k1 detach
+
+# <C-n>, f2 creates a new screen
+bindkey -k k2 screen
+bindkey ^n screen
+
+# statusline
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %d.%m.%y %c:%s "
+
+# screens
+screen -t vim
+screen -t bash
+
+# start on screen 2
+select 1
+

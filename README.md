@@ -15,4 +15,5 @@ symlinks
     ln -s ~/dotfiles/bash_completion.d ~/.bash_completion.d
     ln -s ~/dotfiles/bash_completion ~/.bash_completion
     ln -s ~/dotfiles/aliases ~/.aliases
+    ln -s ~/dotfiles/screenrc ~/.screenrc
 
