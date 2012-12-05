@@ -19,6 +19,7 @@ set foldenable
 set foldmethod=marker
 set autochdir
 set autoread
+set autowrite
 set display+=lastline,uhex
 set backspace=indent,eol,start
 set history=50
@@ -30,6 +31,9 @@ set noerrorbells
 set autoindent
 set wrapscan
 set ttyfast
+set smartcase
+set smarttab
+set lazyredraw
 
 "tab-completion in command-line mode
 set wildmode=list:longest,full
@@ -38,6 +42,7 @@ set wildignore=*.o,*.obj,*.bak,*.exe
 
 "appearance {{{2
 set ruler
+set cmdheight=2
 set showcmd
 set laststatus=2
 set list
