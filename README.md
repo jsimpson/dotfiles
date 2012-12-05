@@ -1,5 +1,6 @@
 installation
 
+    cd ~
     git clone git://github.com/jsimpson/dotfiles.git
     cd dotfiles
     git submodule init
