@@ -68,6 +68,19 @@ set nobackup
 set noswapfile
 set nowb
 
+"statusline
+let &statusline='%<
+    \[%02n]
+    \ %F
+    \ %(%m%h%w%y%r%)
+    \ [%{&ff}]
+    \ %{FileSize()}
+    \ %{fugitive#statusline()}
+    \ %a
+    \ %=
+    \ %8l,%c%V/%L (%P)
+    \ [%08O:%02B]'
+
 " colorscheme {{{1
 set background=dark
 if has("gui_running")
