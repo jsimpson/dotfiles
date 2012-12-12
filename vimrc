@@ -68,7 +68,7 @@ set nobackup
 set noswapfile
 set nowb
 
-"statusline
+"statusline {{{1
 let &statusline='%<
     \[%02n]
     \ %F
@@ -84,7 +84,6 @@ let &statusline='%<
 " colorscheme {{{1
 set background=dark
 if has("gui_running")
-    let g:solarized_menu=0
     colorscheme solarized
 else
     set t_Co=256
