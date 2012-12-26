@@ -69,10 +69,3 @@ function up {
 
 source ~/.aliases
 source ~/.bash_completion
-
-# path changes to add the davinci/mv paths
-#export PROJ_ROOT=$HOME/code/rincon.10-15-2012
-export PROJ_ROOT=$HOME/code/rincon.02-23-2012
-export PATH=$PATH:/opt/mvpro_4.0.1/montavista/pro/devkit/arm/v5t_le/bin:/opt/mvpro_4.0.1/montavista/pro/bin:/opt/mvpro_4.0.1/montavista/common/bin:$PROJ_ROOT/scripts
-export DSPLINK=$PR0J_ROOT/src/dvsdk/dsplink-davinci-v1.50-prebuilt/packages/dsplink
-
