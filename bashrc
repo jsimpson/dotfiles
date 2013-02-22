@@ -69,3 +69,7 @@ function up {
 
 source ~/.aliases
 source ~/.bash_completion
+
+#  work-related stuffs
+export RRH_PROJECT_DIR="/home/techm/rrh/2013-02-18/RRH"
+
