@@ -1,7 +1,7 @@
 au!
 
 " automatically strip whitespace on saves
-au BufWritePre * :%s/\s\+$//e
+au BufWritePre *.c,*.cpp,*.h,*.hs,*.js,*.lua,*.py,*.rb,*.java :%s/\s\+$//e
 
 " set tab syntax for makefiles
 au FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
