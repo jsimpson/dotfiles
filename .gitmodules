@@ -40,3 +40,6 @@
 [submodule "vim/bundle/vim-haskell"]
 	path = vim/bundle/vim-haskell
 	url = http://github.com/wlangstroth/vim-haskell
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = http://github.com/godlygeek/tabular.git
