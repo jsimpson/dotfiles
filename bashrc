@@ -70,6 +70,7 @@ function up {
 source ~/.aliases
 source ~/.bash_completion
 
-#  work-related stuffs
-export RRH_PROJECT_DIR="/home/techm/rrh/2013-02-18/RRH"
+PATH=$PATH:/home/jonathan/luarocks/bin
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
