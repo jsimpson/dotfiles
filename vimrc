@@ -6,8 +6,8 @@ for f in split(globpath(&runtimepath, '_*.vim'), "\n")
 endfor
 
 "pathogen {{{1
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
+execute pathogen#helptags()
 
 syntax on
 filetype plugin indent on
