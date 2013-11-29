@@ -7,6 +7,6 @@ if [ -d "$HOME/.rvm" ]; then
 fi
 
 if [ -d "$HOME/luarocks" ]; then
-    PATH="/home/jonathan/luarocks/bin:$PATH"
+    PATH="$HOME/luarocks/bin:$PATH"
 fi
 
