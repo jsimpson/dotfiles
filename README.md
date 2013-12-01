@@ -16,5 +16,6 @@ symlinks
     ln -s ~/dotfiles/bash_completion ~/.bash_completion
     ln -s ~/dotfiles/aliases ~/.aliases
     ln -s ~/dotfiles/irbrc ~/.irbrc
+    ln -s ~/dotfiles/pryrc ~/.pryrc
     ln -s ~/dotfiles/screenrc ~/.screenrc
 
