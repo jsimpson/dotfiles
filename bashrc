@@ -45,8 +45,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # enable colors for ls, etc.. prefer ~/.dir_colors #64489
-if [[ -f ~/.dir_colors ]]; then
-    eval `dircolors -b ~/.dir_colors`
+if [[ -f ~/.dircolors ]]; then
+    eval `dircolors -b ~/.dircolors`
 else
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
