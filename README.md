@@ -18,4 +18,5 @@ symlinks
     ln -s ~/dotfiles/irbrc ~/.irbrc
     ln -s ~/dotfiles/pryrc ~/.pryrc
     ln -s ~/dotfiles/screenrc ~/.screenrc
+    ln -s ~/dotfiles/conkyrc ~/.conkyrc
 

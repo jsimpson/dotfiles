@@ -37,7 +37,7 @@ BLUE="\[\033[0;34m\]"
 YELLOW="\[\033[0;33m\]"
 CLEAR="\[\033[00m\]"
 
-PS1="${BLUE}\u@\h: ${GREEN}\W $CLEAR\$ "
+export PS1="${BLUE}\u@\h: ${GREEN}\W $CLEAR\$ "
 
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
