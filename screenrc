@@ -66,9 +66,16 @@ hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
 
 # screens
-screen -t vim vim
-screen -t bash bash
 screen -t irssi irssi
+screen -t ncmpcpp ncmpcpp
+screen -t bash bash
+screen -t bash bash
+screen -t bash bash
+screen -t bash bash
+screen -t bash bash
+screen -t bash bash
+screen -t bash bash
+screen -t bash bash
 
 # start on screen 2
 select 1
