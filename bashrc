@@ -69,5 +69,4 @@ function up {
 
 source ~/.aliases
 source ~/.bash_completion
-source ~/.bash_profile
 
