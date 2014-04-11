@@ -1,6 +1,6 @@
 ! urxvt
 
-URxvt*geometry: 53x20
+URxvt*geometry: 360x80
 URxvt*font: xft:Inconsolata:size=12
 URxvt*depth: 32
 URxvt*background: [85]#000000
@@ -48,4 +48,8 @@ URxvt.matcher.button: 1
 !*color14: #CBE6CB
 !*color7: #D0D0D0
 !*color15: #EFEFEF
+
+" Fullscreen switch
+URxvt.perl-ext-common: fullscreen
+URxvt.keysym.F11:      perl:fullscreen:switch
 

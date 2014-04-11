@@ -14,5 +14,3 @@ if [ -d "$HOME/luarocks" ]; then
     PATH="$HOME/luarocks/bin:$PATH"
 fi
 
-. ~/.bashrc
-

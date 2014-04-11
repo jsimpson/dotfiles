@@ -67,6 +67,9 @@ function up {
     } || echo "usage: up INTEGER"
 }
 
+[ -z "$TMUX" ] && export TERM=xterm-256color
+
 source ~/.aliases
 source ~/.bash_completion
+source ~/.bash_profile
 
