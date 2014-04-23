@@ -14,3 +14,6 @@ if [ -d "$HOME/luarocks" ]; then
     PATH="$HOME/luarocks/bin:$PATH"
 fi
 
+export GOROOT=/usr/lib/go
+export GOBIN=/usr/lib/go
+

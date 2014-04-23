@@ -1,4 +1,4 @@
-#!perl
+#!/usr/bin/perl
 sub on_user_command {
     my ($self, $cmd) = @_;
     if ($cmd eq "fullscreen:switch") {
