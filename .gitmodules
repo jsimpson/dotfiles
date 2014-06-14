@@ -43,3 +43,12 @@
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/vim-emblem"]
+	path = vim/bundle/vim-emblem
+	url = http://github.com/heartsentwined/vim-emblem.git
+[submodule "vim/bundle/ember.vim"]
+	path = vim/bundle/ember.vim
+	url = http://github.com/dsawardekar/ember.vim.git
+[submodule "vim/bundle/vim-rails"]
+	path = vim/bundle/vim-rails
+	url = http://github.com/tpope/vim-rails.git
