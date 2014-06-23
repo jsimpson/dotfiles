@@ -87,6 +87,7 @@ if has("gui_running")
     colorscheme solarized
 else
     set t_Co=256
-    colorscheme xoria256
+    set background=dark
+    colorscheme jellybeans
 endif
 
