@@ -67,6 +67,11 @@ function up {
     } || echo "usage: up INTEGER"
 }
 
+# set the global gemset
+function write-gemset {
+    echo "$1 global" > ~/.rbenv-gemsets
+}
+
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
 source ~/.aliases
