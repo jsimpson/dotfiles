@@ -1,7 +1,7 @@
 ! urxvt
 
 URxvt*geometry: 360x80
-URxvt*font: xft:Inconsolata:size=12
+URxvt*font: xft:Inconsolata:size=13
 URxvt*depth: 32
 URxvt*background: [85]#000000
 URxvt*foreground: [100]#ffffff
@@ -13,23 +13,69 @@ URxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: firefox
 URxvt.matcher.button: 1
 
+!! jellybeans colors
+! 8 8 8
+! *background: #080808
+! 128 128 128
+! *foreground: #808080
+! black
+! 26 26 26
+*color0:  #1a1a1a
+! 64 64 64
+*color8:  #404040
+! red
+! 215 95 95
+*color1:  #d75f5f
+! 234 132 132
+*color9:  #EA8484
+! green
+! 135 175 95
+*color2:  #87af5f
+! 199 240 159
+*color10: #C7F09F
+! yellow
+! 255 175 95
+*color3:  #ffaf5f
+! 255 204 154
+*color11: #FFCC9A
+! blue
+! 135 175 215
+*color4:  #87afd7
+! 165 202 239
+*color12: #a5caef
+! magenta
+! 135 135 175
+*color5:  #8787af
+! 166 166 222
+*color13: #A6A6DE
+! cyan
+! 95 135 135
+*color6:  #5f8787
+! 105 178 178
+*color14: #69b2b2
+! white
+! 128 128 128
+*color7:  #808080
+! 215 215 215
+*color15: #d7d7d7
+
 !Pnevma1
-*color0: #2F2E2D
-*color8: #4A4845
-*color1: #A36666
-*color9: #D78787
-*color2: #8FA57E
-*color10: #A9BA9C
-*color3: #D7AF87
-*color11: #E4C9AF
-*color4: #7FA5BD
-*color12: #A1BDCE
-*color5: #C79EC4
-*color13: #D7BEDA
-*color6: #8ADBB4
-*color14: #B1E7DD
-*color7: #D0D0D0
-*color15: #EFEFEF
+!*color0: #2F2E2D
+!*color8: #4A4845
+!*color1: #A36666
+!*color9: #D78787
+!*color2: #8FA57E
+!*color10: #A9BA9C
+!*color3: #D7AF87
+!*color11: #E4C9AF
+!*color4: #7FA5BD
+!*color12: #A1BDCE
+!*color5: #C79EC4
+!*color13: #D7BEDA
+!*color6: #8ADBB4
+!*color14: #B1E7DD
+!*color7: #D0D0D0
+!*color15: #EFEFEF
 
 !Pnevma2 - A heavy mod of the original.
 !*color0: #2F2E2D

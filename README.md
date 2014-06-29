@@ -20,6 +20,5 @@ symlinks
     ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
     ln -s ~/dotfiles/conkyrc ~/.conkyrc
     ln -s ~/dotfiles/Xresources ~/.Xresources
-    ln -s ~/dotfiles/urxvt ~/.urxvt
-    ln -s ~/dotfiles/urxvt/ext/fullscreen ~/.urxvt/ext/fullscreen
-
+    ln -s ~/dotfiles/oh-my-zsh ~/.oh-my-zsh
+    ln -s ~/dotfiles/zshrc ~/.zshrc
