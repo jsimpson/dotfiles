@@ -31,7 +31,10 @@ function up {
     test $DIR != "/" && echo $DIR/$TARGET
 }
 
-function write-gemset {
+function gemset-write {
     echo "$1 global" > ~/.rbenv-gemsets
 }
+
+alias gemset-active="rbenv gemset active"
+alias gemset-list="rbenv gemset list"
 
