@@ -8,7 +8,6 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/home/jonathan/luarocks/bin:/home/jonathan/.rbenv/bin:/home/jonathan/.rbenv/shims:/home/jonathan/.rbenv/plugins/ruby-build/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export EDITOR='vim'
-export TERM=xterm-256color
 
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
