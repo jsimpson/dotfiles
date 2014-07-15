@@ -22,3 +22,4 @@ symlinks
     ln -s ~/dotfiles/Xresources ~/.Xresources
     ln -s ~/dotfiles/oh-my-zsh ~/.oh-my-zsh
     ln -s ~/dotfiles/zshrc ~/.zshrc
+    ln -s ~/dotfiles/bin ~/bin
