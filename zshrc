@@ -37,3 +37,8 @@ function gemset-write {
 alias gemset-active="rbenv gemset active"
 alias gemset-list="rbenv gemset list"
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+unalias heroku
