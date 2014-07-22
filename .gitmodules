@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = http://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/rust.vim"]
+	path = vim/bundle/rust.vim
+	url = http://github.com/wting/rust.vim.git
