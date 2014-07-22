@@ -58,3 +58,6 @@
 [submodule "vim/bundle/rust.vim"]
 	path = vim/bundle/rust.vim
 	url = http://github.com/wting/rust.vim.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = http://github.com/robbyrussell/oh-my-zsh.git
