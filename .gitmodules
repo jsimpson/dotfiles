@@ -40,24 +40,18 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/vim-ruby"]
-	path = vim/bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "vim/bundle/vim-emblem"]
 	path = vim/bundle/vim-emblem
 	url = http://github.com/heartsentwined/vim-emblem.git
-[submodule "vim/bundle/ember.vim"]
-	path = vim/bundle/ember.vim
-	url = http://github.com/dsawardekar/ember.vim.git
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
 	url = http://github.com/tpope/vim-rails.git
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = http://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/rust.vim"]
-	path = vim/bundle/rust.vim
-	url = http://github.com/wting/rust.vim.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = http://github.com/robbyrussell/oh-my-zsh.git
+[submodule "vim/bundle/vim-ruby"]
+	path = vim/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
