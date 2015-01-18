@@ -1,0 +1,31 @@
+sw_volume: 100
+audio_device_state:1:music
+state: pause
+current: 3
+time: 71
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: nan
+playlist_begin
+0:[2013] Tomorrow's Harvest/Tomorrow's Harvest-001-Boards of Canada-Gemini.mp3
+1:[2013] Tomorrow's Harvest/Tomorrow's Harvest-002-Boards of Canada-Reach For The Dead.mp3
+2:[2013] Tomorrow's Harvest/Tomorrow's Harvest-003-Boards of Canada-White Cyclosa.mp3
+3:[2013] Tomorrow's Harvest/Tomorrow's Harvest-004-Boards of Canada-Jacquard Causeway.mp3
+4:[2013] Tomorrow's Harvest/Tomorrow's Harvest-005-Boards of Canada-Telepath.mp3
+5:[2013] Tomorrow's Harvest/Tomorrow's Harvest-006-Boards of Canada-Cold Earth.mp3
+6:[2013] Tomorrow's Harvest/Tomorrow's Harvest-007-Boards of Canada-Transmisiones Ferox.mp3
+7:[2013] Tomorrow's Harvest/Tomorrow's Harvest-008-Boards of Canada-Sick Times.mp3
+8:[2013] Tomorrow's Harvest/Tomorrow's Harvest-009-Boards of Canada-Collapse.mp3
+9:[2013] Tomorrow's Harvest/Tomorrow's Harvest-010-Boards of Canada-Palace Posy.mp3
+10:[2013] Tomorrow's Harvest/Tomorrow's Harvest-011-Boards of Canada-Split Your Infinities.mp3
+11:[2013] Tomorrow's Harvest/Tomorrow's Harvest-012-Boards of Canada-Uritual.mp3
+12:[2013] Tomorrow's Harvest/Tomorrow's Harvest-013-Boards of Canada-Nothing Is Real.mp3
+13:[2013] Tomorrow's Harvest/Tomorrow's Harvest-014-Boards of Canada-Sundown.mp3
+14:[2013] Tomorrow's Harvest/Tomorrow's Harvest-015-Boards of Canada-New Seeds.mp3
+15:[2013] Tomorrow's Harvest/Tomorrow's Harvest-016-Boards of Canada-Come To Dust.mp3
+16:[2013] Tomorrow's Harvest/Tomorrow's Harvest-017-Boards of Canada-Semena Mertvykh.mp3
+playlist_end
