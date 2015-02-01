@@ -68,6 +68,9 @@ set nobackup
 set noswapfile
 set nowb
 
+"ctags {{{2
+set tags=/.tags
+
 "statusline {{{1
 let &statusline='%<
     \[%02n]
