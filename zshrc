@@ -40,3 +40,7 @@ alias gemset-list="rbenv gemset list"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig"
+
+export WUNDERGROUND_API_KEY="1ae4344c201d5e62"

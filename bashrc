@@ -78,3 +78,5 @@ source ~/.aliases
 source ~/.bash_completion
 source ~/.bash_profile
 
+export WUNDERGROUND_API_KEY="1ae4344c201d5e62"
+
