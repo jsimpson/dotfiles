@@ -61,3 +61,6 @@
 [submodule "vim/bundle/vim-mix"]
 	path = vim/bundle/vim-mix
 	url = http://github.com/mattreduce/vim-mix.git
+[submodule "vim/bundle/vim-haml"]
+	path = vim/bundle/vim-haml
+	url = https://github.com/tpope/vim-haml.git
