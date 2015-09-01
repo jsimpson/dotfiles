@@ -68,12 +68,15 @@ function up {
 }
 
 # set the global gemset
-function write-gemset {
+function gemset-write {
     echo "$1 global" > ~/.rbenv-gemsets
 }
 
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
+GIT_PROMPT_ONLY_IN_REPO=1
+
+source ~/.bash-git-prompt/gitprompt.sh
 source ~/.aliases
 source ~/.bash_completion
 source ~/.bash_profile

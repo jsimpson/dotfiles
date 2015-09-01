@@ -23,3 +23,4 @@ symlinks
     ln -s ~/dotfiles/oh-my-zsh ~/.oh-my-zsh
     ln -s ~/dotfiles/zshrc ~/.zshrc
     ln -s ~/dotfiles/bin ~/bin
+    ln -s ~/dotfiles/bash-git-prompt ~/.bash-git-prompt
