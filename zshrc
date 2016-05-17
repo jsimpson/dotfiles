@@ -48,4 +48,7 @@ export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -d "$HOME/.rvm" ]] && export PATH="$HOME/.rvm/bin:$PATH"
 
+export NVM_DIR="/home/jsimpson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 [[ -f "$HOME/.secrets" ]] && source ~/.secrets
