@@ -84,3 +84,6 @@ source ~/.bash_profile
 if [ -f ~/.secrets ]; then
     source ~/.secrets
 fi
+
+export NVM_DIR="/home/jsimpson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
