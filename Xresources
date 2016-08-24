@@ -15,6 +15,8 @@ URxvt.scrollstyle: rxvt
 URxvt.urlLauncher: google-chrome
 URxvt.matcher.button: 1
 
+URxvt*iso14755: false
+
 *background:#222222
 *foreground:#e8e9ca
 
