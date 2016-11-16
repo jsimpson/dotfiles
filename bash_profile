@@ -27,3 +27,5 @@ export GOBIN=/usr/lib/go
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
 
+#source ~/.bashrc
+

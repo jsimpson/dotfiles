@@ -72,11 +72,10 @@ function gemset-write {
     echo "$1 global" > ~/.rbenv-gemsets
 }
 
-[ -z "$TMUX" ] && export TERM=rxvt-unicode
+[ -z "$TMUX" ] && export TERM=xterm-256color
 
 GIT_PROMPT_ONLY_IN_REPO=1
 
-source ~/.bash-git-prompt/gitprompt.sh
 source ~/.aliases
 source ~/.bash_completion
 source ~/.bash_profile
@@ -87,3 +86,4 @@ fi
 
 export NVM_DIR="/home/jsimpson/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
