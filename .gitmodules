@@ -64,6 +64,3 @@
 [submodule "vim/bundle/vim-haml"]
 	path = vim/bundle/vim-haml
 	url = https://github.com/tpope/vim-haml.git
-[submodule "bash-git-prompt"]
-	path = bash-git-prompt
-	url = https://github.com/magicmonty/bash-git-prompt.git
