@@ -17,7 +17,6 @@ filetype plugin indent on
 set fileformats=unix,dos,mac
 set foldenable
 set foldmethod=marker
-set autochdir
 set autoread
 set autowrite
 set display+=lastline,uhex
@@ -69,7 +68,7 @@ set noswapfile
 set nowb
 
 "ctags {{{2
-set tags=/.tags
+set tags=tags
 
 "statusline {{{1
 let &statusline='%<
