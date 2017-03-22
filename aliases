@@ -54,3 +54,6 @@ alias gd="git diff"
 # gemsets
 alias gemset-active="rbenv gemset active"
 alias gemset-list="rbenv gemset list"
+
+# rails stuff
+alias railsdb="bundle exec rake db:drop && bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed"

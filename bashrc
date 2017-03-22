@@ -74,8 +74,6 @@ function gemset-write {
 
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
-GIT_PROMPT_ONLY_IN_REPO=1
-
 source ~/.aliases
 source ~/.bash_completion
 source ~/.bash_profile
@@ -84,6 +82,8 @@ if [ -f ~/.secrets ]; then
     source ~/.secrets
 fi
 
-export NVM_DIR="/home/jsimpson/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export PATH=~/.nvm/versions/node/v6.1.0/bin:~/.rbenv/plugins/ruby-build/bin:~/.rbenv/shims:~/.rbenv/shims:~/.rbenv/bin:~/.rbenv/plugins/ruby-build/bin:~/.rbenv/shims:~/.rbenv/shims:~/.rbenv/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/snap/bin:~/.nvm/versions/node/v6.1.0/bin
+export PATH="$PATH:`yarn global bin`"

@@ -1,10 +1,17 @@
 ! urxvt
+Xcursor.size:size24
+Xcursor.theme:themeDMZ-Black
+Xft.antialias:antialias1
+Xft.dpi:dpi96
+Xft.hinting:hinting1
+Xft.hintstyle:hintstylehintslight
+Xft.rgba:rgbargb
 
 URxvt*geometry: 360x80
-URxvt*font: xft:Inconsolata:size=14
+URxvt*font: xft:Inconsolata:size=16
 URxvt*depth: 32
-URxvt*background: [85]#000000
-URxvt*foreground: [100]#ffffff
+!URxvt*background: [100]#000000
+!URxvt*foreground: [100]#ffffff
 URxvt*borderless: 1
 URxvt*scrollBar: true
 URxvt*scrollBar_right: false
@@ -17,8 +24,36 @@ URxvt.matcher.button: 1
 
 URxvt*iso14755: false
 
-*background:#222222
-*foreground:#e8e9ca
+!*background:#222222
+!*foreground:#e8e9ca
+
+! Jellybeans Terminal Colours
+urxvt.background: #151515
+urxvt.foreground: #ffffff
+! ! black
+urxvt.color0: #888888
+urxvt.color8: #525252
+! ! red
+urxvt.color1: #cf6a4c
+urxvt.color9: #ff9d80
+! ! green
+urxvt.color2: #99ad6a
+urxvt.color10: #c3e6ad
+! ! yellow
+urxvt.color3: #fad07a
+urxvt.color11: #ffefbf
+! ! blue
+urxvt.color4: #8197bf
+urxvt.color12: #accaff
+! ! magenta
+urxvt.color5: #8787af
+urxvt.color13: #c4c4ff
+! ! cyan
+urxvt.color6: #8fbfdc
+urxvt.color14: #80bfaf
+! ! white
+urxvt.color7: #888888
+urxvt.color15: #e8e8d3
 
 !*color0:    #222222
 !*color1:    #8b3e2f
@@ -39,22 +74,88 @@ URxvt*iso14755: false
 !*color15:   #e8e9ca
 
 !Pnevma1
-*color0: #2F2E2D
-*color8: #4A4845
-*color1: #A36666
-*color9: #D78787
-*color2: #8FA57E
-*color10: #A9BA9C
-*color3: #D7AF87
-*color11: #E4C9AF
-*color4: #7FA5BD
-*color12: #A1BDCE
-*color5: #C79EC4
-*color13: #D7BEDA
-*color6: #8ADBB4
-*color14: #B1E7DD
-*color7: #D0D0D0
-*color15: #EFEFEF
+!*color0: #2F2E2D
+!*color8: #4A4845
+!*color1: #A36666
+!*color9: #D78787
+!*color2: #8FA57E
+!*color10: #A9BA9C
+!*color3: #D7AF87
+!*color11: #E4C9AF
+!*color4: #7FA5BD
+!*color12: #A1BDCE
+!*color5: #C79EC4
+!*color13: #D7BEDA
+!*color6: #8ADBB4
+!*color14: #B1E7DD
+!*color7: #D0D0D0
+!*color15: #EFEFEF
+
+!jellybeans: https://github.com/richo/jellybeans.vim/blob/c7ff7e9555881a5671fcc8753b381ba142b5ea82/Xdefaults/jellybeans.Xdefaults
+!*color0: #393939
+!*color1: #ca674a
+!*color2: #96a967
+!*color3: #d3a94a
+!*color4: #5778c1
+!*color5: #9c35ac
+!*color6: #6eb5f3
+!*color7: #a9a9a9
+!*color8: #535551
+!*color9: #ea2828
+!*color10: #87dd32
+!*color11: #f7e44d
+!*color12: #6f9bca
+!*color13: #a97ca4
+!*color14: #32dddd
+!*color15: #e9e9e7
+
+!solarized light
+!#define S_base03        #002b36
+!#define S_base02        #073642
+!#define S_base01        #586e75
+!#define S_base00        #657b83
+!#define S_base0         #839496
+!#define S_base1         #93a1a1
+!#define S_base2         #eee8d5
+!#define S_base3         #fdf6e3
+!*background:            S_base3
+!*foreground:            S_base00
+!*fadeColor:             S_base3
+!*cursorColor:           S_base01
+!*pointerColorBackground:S_base1
+!*pointerColorForeground:S_base01
+!#define S_yellow        #b58900
+!#define S_orange        #cb4b16
+!#define S_red           #dc322f
+!#define S_magenta       #d33682
+!#define S_violet        #6c71c4
+!#define S_blue          #268bd2
+!#define S_cyan          #2aa198
+!#define S_green         #859900
+!!!! black dark/light
+!*color0:                S_base02
+!*color8:                S_base03
+!!!! red dark/light
+!*color1:                S_red
+!*color9:                S_orange
+!!!! green dark/light
+!*color2:                S_green
+!*color10:               S_base01
+!!!! yellow dark/light
+!*color3:                S_yellow
+!*color11:               S_base00
+!!!! blue dark/light
+!*color4:                S_blue
+!*color12:               S_base0
+!!!! magenta dark/light
+!*color5:                S_magenta
+!*color13:               S_violet
+!!!! cyan dark/light
+!*color6:                S_cyan
+!*color14:               S_base1
+!!!! white dark/light
+!*color7:                S_base2
+!*color15:               S_base3
 
 !Pnevma2 - A heavy mod of the original.
 !*color0: #2F2E2D
