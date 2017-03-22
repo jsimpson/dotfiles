@@ -1,4 +1,4 @@
-installation
+# installation
 
     cd ~
     git clone git://github.com/jsimpson/dotfiles.git
@@ -6,7 +6,7 @@ installation
     git submodule init
     git submodule update
 
-symlinks
+# symlinks
 
     ln -s ~/dotfiles/vimrc ~/.vimrc
     ln -s ~/dotfiles/vim ~/.vim
@@ -20,7 +20,17 @@ symlinks
     ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
     ln -s ~/dotfiles/conkyrc ~/.conkyrc
     ln -s ~/dotfiles/Xresources ~/.Xresources
-    ln -s ~/dotfiles/oh-my-zsh ~/.oh-my-zsh
     ln -s ~/dotfiles/zshrc ~/.zshrc
     ln -s ~/dotfiles/bin ~/bin
     ln -s ~/dotfiles/bash-git-prompt ~/.bash-git-prompt
+
+# removing submodules
+
+```bash
+mv some-submodule _some-submodule
+git submodule deinit some-submodule
+git rm some-submodule
+rm -rf _some-submodile
+```
+
+It may also sometimes be necessary to manually remove the entry from `.gitmodules`
