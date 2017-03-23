@@ -23,6 +23,7 @@
     ln -s ~/dotfiles/zshrc ~/.zshrc
     ln -s ~/dotfiles/bin ~/bin
     ln -s ~/dotfiles/bash-git-prompt ~/.bash-git-prompt
+    ln -s ~/dotfiles/dircolors ~/.dircolors
 
 # removing submodules
 

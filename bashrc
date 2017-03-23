@@ -44,7 +44,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# enable colors for ls, etc.. prefer ~/.dir_colors #64489
+# enable colors for ls, etc...
 if [[ -f ~/.dircolors ]]; then
     eval `dircolors -b ~/.dircolors`
 else
@@ -72,7 +72,7 @@ function gemset-write {
     echo "$1 global" > ~/.rbenv-gemsets
 }
 
-[ -z "$TMUX" ] && export TERM=xterm-256color
+[ -z "$TMUX" ] && export TERM=rxvt-unicode
 
 source ~/.aliases
 source ~/.bash_completion
