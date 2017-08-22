@@ -51,6 +51,7 @@ alias gc="git commit -m"
 alias gca="git commit -am"
 alias gs="git status -sb"
 alias gd="git diff"
+alias gitcommitcount="git shortlog -s -n --no-merges"
 
 # gemsets
 alias gemset-active="rbenv gemset active"
