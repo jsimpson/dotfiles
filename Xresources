@@ -10,22 +10,16 @@ Xft.rgba:rgbargb
 URxvt*geometry: 360x80
 URxvt*font: xft:Inconsolata:size=16
 URxvt*depth: 32
-!URxvt*background: [100]#000000
-!URxvt*foreground: [100]#ffffff
 URxvt*borderless: 1
 URxvt*scrollBar: true
 URxvt*scrollBar_right: false
 URxvt*saveLines: 9999
 URxvt*termName: rxvt-unicode
 URxvt.scrollstyle: rxvt
-!URxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: google-chrome
 URxvt.matcher.button: 1
 
 URxvt*iso14755: false
-
-!*background:#222222
-!*foreground:#e8e9ca
 
 ! Jellybeans Terminal Colours
 *background: #151515

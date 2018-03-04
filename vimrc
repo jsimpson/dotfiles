@@ -35,9 +35,10 @@ set smarttab
 set lazyredraw
 
 "tab-completion in command-line mode
+set path+=**
 set wildmode=list:longest,full
 set wildmenu
-set wildignore=*.o,*.obj,*.bak,*.exe
+set wildignore=*.o,*.obj,*.bak,*.exe,*/node_modules/*,*/vendor/*,*/tmp/cache/*
 
 "appearance {{{2
 set ruler
