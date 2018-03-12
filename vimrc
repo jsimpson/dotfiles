@@ -84,7 +84,7 @@ let &statusline='%<
     \ %8l,%c%V/%L (%P)
     \ [%08O:%02B]'
 
-" colorscheme {{{1
+"colorscheme {{{1
 set background=dark
 if has("gui_running")
     colorscheme solarized
@@ -94,3 +94,9 @@ else
     colorscheme jellybeans
 endif
 
+"misc bits {{{1
+if &term =~ '256color'
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  set t_ut=
+endif
