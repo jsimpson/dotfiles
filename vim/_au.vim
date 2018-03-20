@@ -21,3 +21,10 @@ au FileType html let StartComment='<!--' | let EndComment="--->"
 au FileType c,javascript,c let StartComment='//' | let EndComment=""
 au FileType cpp,java let StartComment='/*' | let EndComment="*/"
 au FileType vim let StartComment='\"' | let EndComment=""
+
+" use rainbow parenthesis in ruby,js
+augroup rainbow_web
+  autocmd!
+  autocmd FileType javascript,ruby RainbowParentheses
+augroup END
+
