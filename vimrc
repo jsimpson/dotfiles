@@ -21,7 +21,7 @@ set autoread
 set autowrite
 set display+=lastline,uhex
 set backspace=indent,eol,start
-set history=50
+set history=1000
 set incsearch
 set hidden
 set nojoinspaces
@@ -33,6 +33,9 @@ set ttyfast
 set smartcase
 set smarttab
 set lazyredraw
+set complete-=1
+set tabpagemax=50
+set sessionoptions-=options
 
 "tab-completion in command-line mode
 set path+=**
@@ -46,15 +49,16 @@ set cmdheight=2
 set showcmd
 set laststatus=2
 set list
-set listchars=tab:>\ ,trail:-
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set formatoptions+=j
 set number
 set numberwidth=5
 set cursorline
 set hlsearch
 set nowrap
 set matchtime=5
-set scrolloff=5
-set sidescrolloff=10
+set scrolloff=1
+set sidescrolloff=15
 set showmatch
 
 "indentation {{{2

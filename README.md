@@ -35,3 +35,15 @@ rm -rf _some-submodile
 ```
 
 It may also sometimes be necessary to manually remove the entry from `.gitmodules`
+
+# profiling vim
+
+```vimscript
+:profile start profile.log
+:profile func *
+:profile file *
+" At this point do slow actions
+:profile pause
+:noautocmd qall!
+```
+
