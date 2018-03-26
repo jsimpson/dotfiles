@@ -33,15 +33,16 @@ set ttyfast
 set smartcase
 set smarttab
 set lazyredraw
-set complete-=1
+set complete-=i
 set tabpagemax=50
 set sessionoptions-=options
+set dictionary=/usr/share/dict/words
 
 "tab-completion in command-line mode
 set path+=**
 set wildmode=list:longest,full
 set wildmenu
-set wildignore=*.o,*.obj,*.bak,*.exe,*/node_modules/*,*/vendor/*,*/tmp/cache/*
+set wildignore+=*.o,*.obj,*.bak,*.exe,*/node_modules/*,*/vendor/*,*/tmp/cache/*,tags
 
 "appearance {{{2
 set ruler

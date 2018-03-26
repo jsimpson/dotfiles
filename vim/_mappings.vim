@@ -16,3 +16,4 @@ nmap <C-j> <C-w>j<C-w><Esc>
 nmap <C-k> <C-w>k<C-w><Esc>
 nmap <C-l> <C-w>l<C-w><Esc>
 
+nnoremap <F9> :Dispatch<CR>
