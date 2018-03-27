@@ -1,13 +1,13 @@
 set nocp
 
+"pathogen {{{1
+execute pathogen#infect()
+execute pathogen#helptags()
+
 "source my crap {{{1
 for f in split(globpath(&runtimepath, '_*.vim'), "\n")
     exe 'source '. f
 endfor
-
-"pathogen {{{1
-execute pathogen#infect()
-execute pathogen#helptags()
 
 syntax on
 filetype plugin indent on
