@@ -12,5 +12,6 @@
 --exclude=node_modules
 --exclude=elm-stuff
 --exclude=public/assets
+--exclude=public/packs
 --exclude=vendor
 --languages=-javascript
