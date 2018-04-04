@@ -17,13 +17,19 @@
     ln -s ~/dotfiles/aliases ~/.aliases
     ln -s ~/dotfiles/irbrc ~/.irbrc
     ln -s ~/dotfiles/pryrc ~/.pryrc
+    ln -s ~/dotfiles/gemrc ~/.gemrc
     ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
     ln -s ~/dotfiles/conkyrc ~/.conkyrc
-    ln -s ~/dotfiles/Xresources ~/.Xresources
     ln -s ~/dotfiles/zshrc ~/.zshrc
+
+    ln -s ~/dotfiles/agignore ~/.agignore
+    ln -s ~/dotfiles/gitignore ~/.gitignore
+
     ln -s ~/dotfiles/bin ~/bin
     ln -s ~/dotfiles/bash-git-prompt ~/.bash-git-prompt
     ln -s ~/dotfiles/dircolors ~/.dircolors
+    ln -s ~/dotfiles/Xresources ~/.Xresources
+
 
 # removing submodules
 

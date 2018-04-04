@@ -14,8 +14,11 @@ alias c='clear'
 alias q="exit"
 alias h='history'
 
-# tree
+# pretty print subdir tree
 alias tree="find . -print | sed -e 's;[^/]*/;|___;g;s;___|; |;g'"
+
+# pretty print path
+alias path='echo $PATH | tr -s ":" "\n"'
 
 # directory
 alias md='mkdir -p'
@@ -60,3 +63,4 @@ alias gemset-list="rbenv gemset list"
 # rails stuff
 alias railsdb="bundle exec rake db:drop && bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed"
 alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
+
