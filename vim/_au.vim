@@ -25,6 +25,6 @@ au FileType vim let StartComment='\"' | let EndComment=""
 " use rainbow parenthesis in ruby,js
 augroup rainbow_web
   au!
-  au FileType javascript,ruby RainbowParentheses
+  au FileType javascript,ruby,eruby RainbowParentheses
 augroup END
 
