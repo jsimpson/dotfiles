@@ -17,3 +17,7 @@ nmap <C-k> <C-w>k<C-w><Esc>
 nmap <C-l> <C-w>l<C-w><Esc>
 
 nnoremap <F9> :Dispatch<CR>
+
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+nnoremap \ :Ag<SPACE>
