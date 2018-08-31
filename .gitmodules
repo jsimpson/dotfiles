@@ -46,3 +46,6 @@
 [submodule "vim/bundle/vim-dispatch"]
 	path = vim/bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "vim/bundle/rspec.vim"]
+	path = vim/bundle/rspec.vim
+	url = git@github.com:keith/rspec.vim

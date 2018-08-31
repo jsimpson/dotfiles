@@ -1,0 +1,5 @@
+# ~/bin/kafka-ubuntu
+#!/bin/bash
+
+/opt/Kafka/bin/kafka-server-start.sh /opt/Kafka/config/server.properties
+
