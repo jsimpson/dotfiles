@@ -1,6 +1,6 @@
 #!/bin/bash
 # ls
-alias ls="ls --color=always"
+alias ls='ls --color=always'
 alias sl=ls
 alias ll='ls -lh'
 alias la='ls -lha'
@@ -60,7 +60,7 @@ alias gitcommitcount="git shortlog -s -n --no-merges"
 alias gemset-active="rbenv gemset active"
 alias gemset-list="rbenv gemset list"
 
-# rails stuff
-alias railsdb="bundle exec rake db:drop && bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed"
+# rails stuff`
+alias railsdb="bundle exec rake db:drop && bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed && bundle exec rake db:test:prepare"
 alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
 
