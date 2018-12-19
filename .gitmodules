@@ -46,3 +46,12 @@
 [submodule "vim/bundle/vim-dispatch"]
 	path = vim/bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "vim/bundle/vim-elixir"]
+	path = vim/bundle/vim-elixir
+	url = git@github.com:elixir-editors/vim-elixir.git
+[submodule "vim/bundle/vim-lua"]
+	path = vim/bundle/vim-lua
+	url = git@github.com:tbastos/vim-lua
+[submodule "vim/bundle/vim-json"]
+	path = vim/bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
