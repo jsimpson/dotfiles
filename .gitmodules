@@ -34,9 +34,6 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule "vim/bundle/elm-vim"]
-	path = vim/bundle/elm-vim
-	url = git@github.com:ElmCast/elm-vim.git
 [submodule "vim/bundle/vim-css-color"]
 	path = vim/bundle/vim-css-color
 	url = git@github.com:ap/vim-css-color.git
@@ -52,9 +49,6 @@
 [submodule "vim/bundle/vim-lua"]
 	path = vim/bundle/vim-lua
 	url = git@github.com:tbastos/vim-lua
-[submodule "vim/bundle/vim-json"]
-	path = vim/bundle/vim-json
-	url = git@github.com:elzr/vim-json.git
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
