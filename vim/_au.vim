@@ -3,6 +3,9 @@ au!
 " set filetype for .vue
 "au BufNewFile,BufRead *.vue set filetype=javascript
 
+" set filetype for .avsc
+au BufNewFile,BufRead *.avsc set filetype=json
+
 " automatically strip whitespace on saves
 au BufWritePre *.c,*.cpp,*.scss,*.es6,*.h,*.hs,*.js,*.lua,*.py,*.rb,*.opal,*.java,*.erb,*.vue :%s/\s\+$//e
 

@@ -53,6 +53,7 @@ alias untarbz2="tar xvjf"
 alias gc="git commit -m"
 alias gca="git commit -am"
 alias gs="git status -sb"
+alias gl="git log --pretty=short"
 alias gd="git diff"
 alias gitcommitcount="git shortlog -s -n --no-merges"
 
