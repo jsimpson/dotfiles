@@ -9,4 +9,3 @@ fu! FileSize()
         return (bytes / 1024) . "K"
     endif
 endf
-

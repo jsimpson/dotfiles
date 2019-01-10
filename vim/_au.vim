@@ -1,7 +1,10 @@
 au!
 
-" set filetype for .vue
-"au BufNewFile,BufRead *.vue set filetype=javascript
+" automatically strip whitespace on saves
+au BufWritePre *.c,*.cpp,*.scss,*.es6,*.h,*.hs,*.js,*.lua,*.py,*.rb,*.opal,*.java,*.erb,*.vue :%s/\s\+$//e
+
+" let supertab attempt to figure out the correct autocomplete context
+au FileType ruby let g:SuperTabDefaultCompletionType="context"
 
 " set filetype for .avsc
 au BufNewFile,BufRead *.avsc set filetype=json
@@ -30,4 +33,3 @@ augroup rainbow_web
   au!
   au FileType javascript,ruby,eruby RainbowParentheses
 augroup END
-
