@@ -6,8 +6,8 @@ cno jj <c-c>
 map <leader>v :sp ~/.vimrc<CR><C-W>_
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>
 
-map <leader>t :NERDTree<CR>
 map <leader>j :%!python -m json.tool<CR>
+
 cmap w!! w !sudo tee % > /dev/null
 
 nmap <C-n> <C-w>n<C-w><Esc>

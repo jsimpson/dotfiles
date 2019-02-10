@@ -33,7 +33,8 @@ set ttyfast
 set smartcase
 set smarttab
 set lazyredraw
-set complete-=i
+set complete=.,b,u,]
+set completeopt=menu,preview
 set tabpagemax=50
 set sessionoptions-=options
 set dictionary=/usr/share/dict/words
@@ -129,3 +130,6 @@ endif
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
+
+" use rbenv ruby
+let g:ruby_path = system('echo $HOME/.rbenv/shims')
