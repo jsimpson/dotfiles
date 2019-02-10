@@ -67,3 +67,9 @@
 [submodule "vim/bundle/vim-rbenv"]
 	path = vim/bundle/vim-rbenv
 	url = git@github.com:tpope/vim-rbenv.git
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "vim/bundle/vim-rspec"]
+	path = vim/bundle/vim-rspec
+	url = git@github.com:thoughtbot/vim-rspec.git

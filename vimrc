@@ -106,10 +106,14 @@ if &term =~ '256color'
   set t_ut=
 endif
 
-"rainbow_parentheses{{{1
+" use dispatch to execute rspec {{{2
+let g:rspec_command = "Dispatch rspec {spec}"
+let g:rspec_runner = "os_x_iterm"
+
+" rainbow_parentheses{{{2
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
-"use ag instead of grep
+"use ag instead of grep for grepprg / ctrlp {{{2
 if executable('ag')
     " Use ag over grep
     set grepprg=ag\ --nogroup\ --nocolor
@@ -120,4 +124,3 @@ if executable('ag')
     " ag is fast enough that CtrlP doesn't need to cache
     let g:ctrlp_use_caching = 0
 endif
-
