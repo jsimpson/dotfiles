@@ -16,8 +16,6 @@ URxvt*scrollBar_right: false
 URxvt*saveLines: 9999
 URxvt*termName: rxvt-unicode
 URxvt.scrollstyle: rxvt
-URxvt.urlLauncher: google-chrome
-URxvt.matcher.button: 1
 
 URxvt*iso14755: false
 
@@ -168,3 +166,14 @@ URxvt*iso14755: false
 !*color14: #CBE6CB
 !*color7: #D0D0D0
 !*color15: #EFEFEF
+!
+!-*- Perl extensions -*-
+URxvt.perl-ext-common: default,fullscreen,selection-to-clipboard,pasta,matcher,keyboard-select
+URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.underlineURLs: true
+URxvt.matcher.button: 1
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.Control-Shift-V: perl:pasta:paste
+URxvt.clipboard.autocopy: true
