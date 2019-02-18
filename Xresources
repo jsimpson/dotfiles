@@ -168,7 +168,3 @@ URxvt*iso14755: false
 !*color14: #CBE6CB
 !*color7: #D0D0D0
 !*color15: #EFEFEF
-
-URxvt.perl-ext-common: fullscreen
-URxvt.keysym.F11:      perl:fullscreen:switch
-URxvt.perl-ext-common: selection-to-clipboard

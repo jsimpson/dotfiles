@@ -1,5 +1,3 @@
-source /etc/profile
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -72,13 +70,7 @@ function gemset-write {
     echo "$1 global" > ~/.rbenv-gemsets
 }
 
-function journal() {
-    mkdir -p ~/journal/`date +%Y`
-    $EDITOR ~/journal/`date +%Y`/`date +%m-%d`
-}
-alias j=journal
-
-[ -z "$TMUX" ] && export TERM=rxvt-unicode
+[ -z "$TMUX" ] && export TERM=rxvt-unicode-256color
 
 source ~/.aliases
 source ~/.bash_completion

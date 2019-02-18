@@ -109,7 +109,6 @@ endif
 
 " use dispatch to execute rspec {{{2
 let g:rspec_command = "Dispatch rspec {spec}"
-let g:rspec_runner = "os_x_iterm"
 
 " rainbow_parentheses{{{2
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
