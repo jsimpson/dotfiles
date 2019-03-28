@@ -43,9 +43,6 @@
 [submodule "vim/bundle/vim-lua"]
 	path = vim/bundle/vim-lua
 	url = git@github.com:tbastos/vim-lua
-[submodule "vim/bundle/vim-go"]
-	path = vim/bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
 [submodule "vim/bundle/rspec.vim"]
 	path = vim/bundle/rspec.vim
 	url = git@github.com:keith/rspec.vim
