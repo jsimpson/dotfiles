@@ -1,4 +1,6 @@
 *.swp
 *~
 vim/.netrwhist
+vim/plugged/*
 secrets
+
