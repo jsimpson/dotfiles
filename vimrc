@@ -20,6 +20,7 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-bundler'
 
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-markdown'
