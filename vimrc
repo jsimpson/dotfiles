@@ -1,8 +1,36 @@
 set nocp
 
-"pathogen {{{1
-execute pathogen#infect()
-execute pathogen#helptags()
+"plugins {{{1
+call plug#begin('$HOME/.vim/plugged')
+
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'itchyny/lightline.vim'
+
+Plug 'vim-ruby/vim-ruby'
+Plug 'elixir-editors/vim-elixir'
+Plug 'pangloss/vim-javascript'
+Plug 'tbastos/vim-lua'
+
+Plug 'tpope/vim-rbenv'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-bundler'
+
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-unimpaired'
+
+Plug 'junegunn/rainbow_parentheses.vim'
+
+call plug#end()
 
 "source my crap {{{1
 for f in split(globpath(&runtimepath, '_*.vim'), "\n")
@@ -78,17 +106,17 @@ set nowb
 set tags=tags
 
 "statusline {{{1
-let &statusline='%<
-    \[%02n]
-    \ %F
-    \ %(%m%h%w%y%r%)
-    \ [%{&ff}]
-    \ %{FileSize()}
-    \ %{fugitive#statusline()}
-    \ %a
-    \ %=
-    \ %8l,%c%V/%L (%P)
-    \ [%08O:%02B]'
+"let &statusline='%<
+"    \[%02n]
+"    \ %F
+"    \ %(%m%h%w%y%r%)
+"    \ [%{&ff}]
+"    \ %{FileSize()}
+"    \ %{FugitiveStatusline()}
+"    \ %a
+"    \ %=
+"    \ %8l,%c%V/%L (%P)
+"    \ [%08O:%02B]'
 
 "colorscheme {{{1
 set background=dark
@@ -129,6 +157,22 @@ endif
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
+
+let g:ale_linters = {
+  \ 'ruby': ['reek', 'ruby', 'solargraph'] ,
+  \ }
+
+" lightline
+let g:lightline = {
+  \ 'colorscheme': 'jellybeans',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
+  \ },
+  \ 'component': {
+  \   'charvaluehex': '0x%B'
+  \ },
+  \ }
 
 " use rbenv ruby
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
