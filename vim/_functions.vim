@@ -1,11 +1,5 @@
-fu! FileSize()
-    let bytes = getfsize(expand("%:p"))
-    if bytes <= 0
-        return "0"
-    endif
-    if bytes < 1024
-        return bytes
-    else
-        return (bytes / 1024) . "K"
-    endif
-endf
+" use <tab> to trigger coc.nvim completion and navigate to next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
