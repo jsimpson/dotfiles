@@ -163,6 +163,13 @@ let g:ale_linters = {
   \ 'ruby': ['reek', 'ruby', 'solargraph'] ,
   \ }
 
+
+let g:ale_elixir_elixir_ls_config = {
+  \ 'elixirLS': {
+  \   'dialyzerEnabled': v:false,
+  \ },
+  \ }
+
 " lightline
 let g:lightline = {
   \ 'colorscheme': 'jellybeans',
