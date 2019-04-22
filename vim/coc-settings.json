@@ -4,7 +4,8 @@
     "languageserver": {
         "elixirLS": {
             "command": "/home/jsimpson/projects/elixir-ls/release/language_server.sh",
-            "filetypes": ["elixir", "eelixir"]
+            "filetypes": ["elixir", "eelixir"],
+            "dialyzerEnabled": false
         }
     }
 }
