@@ -1,4 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -63,11 +62,6 @@ function up {
     done
     cd $ups
     } || echo "usage: up INTEGER"
-}
-
-# set the global gemset
-function gemset-write {
-    echo "$1 global" > ~/.rbenv-gemsets
 }
 
 [ -z "$TMUX" ] && export TERM=rxvt-unicode-256color
