@@ -1,1 +1,0 @@
-cd ~/Downloads/elasticsearch-6.4.2 && nohup bin/elasticsearch > /dev/null 2>&1 &
