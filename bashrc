@@ -28,12 +28,13 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-export PS1="\[$(tput setaf 4)\]\u@\h: \[$(tput setaf 2)\]\W \[$(tput sgr0)\]$ "
 
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # enable colors for ls, etc...
 if [[ -f ~/.dircolors ]]; then
@@ -46,6 +47,7 @@ else
 fi
 
 export EDITOR=/usr/bin/vim
+export PS1="\[$(tput setaf 4)\]\u@\h: \[$(tput setaf 2)\]\W \[$(tput sgr0)\]$ "
 
 # easily go up lots of directories
 function up {
@@ -67,4 +69,3 @@ source ~/.bash_profile
 if [ -f ~/.secrets ]; then
     source ~/.secrets
 fi
-
