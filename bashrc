@@ -1,43 +1,29 @@
-# If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-# don't put duplicate lines in the history. See bash(1) for more options
-# don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
-# ... or force ignoredups and ignorespace
 HISTCONTROL=ignoreboth
-# and also ignore other bits i don't care about
 export HISTIGNORE="&:[ ]*:exit"
-
-# append to the history file, don't overwrite it
 shopt -s histappend
 export HISTFILE=~/.long_history
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 export HISTSIZE=9999
 export HISTFILESIZE=9999
 
 export AUTOFEATURE=true autotest
 
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
-# set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
-
 
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# enable fzf
+if [ -f ~/.fzf.bash ]; then
+    source ~/.fzf.bash
+fi
 
 # enable colors for ls, etc...
-if [[ -f ~/.dircolors ]]; then
+if [ -f ~/.dircolors ]; then
     eval `dircolors -b ~/.dircolors`
 else
     eval "`dircolors -b`"
@@ -51,13 +37,13 @@ export PS1="\[$(tput setaf 4)\]\u@\h: \[$(tput setaf 2)\]\W \[$(tput sgr0)\]$ "
 
 # easily go up lots of directories
 function up {
-[ "${1/[^0-9]/}" == "$1" ] && {
-    local ups=""
-    for i in $(seq 1 $1); do
-        ups=$ups"../"
-    done
-    cd $ups
-    } || echo "usage: up INTEGER"
+    [ "${1/[^0-9]/}" == "$1" ] && {
+        local ups=""
+            for i in $(seq 1 $1); do
+                ups=$ups"../"
+            done
+            cd $ups
+        } || echo "usage: up INTEGER"
 }
 
 [ -z "$TMUX" ] && export TERM=rxvt-unicode-256color

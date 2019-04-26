@@ -1,37 +1,43 @@
-# installation
+# dotfiles
 
-    cd ~
-    git clone git://github.com/jsimpson/dotfiles.git
-    cd dotfiles
-    git submodule init
-    git submodule update
+a constant work in progress. art by any other name.
 
 # symlinks
 
-    ln -s ~/dotfiles/vimrc ~/.vimrc
-    ln -s ~/dotfiles/vim ~/.vim
-    ln -s ~/dotfiles/bash_profile ~/.bash_profile
-    ln -s ~/dotfiles/bashrc ~/.bashrc
-    ln -s ~/dotfiles/bash_completion ~/.bash_completion
-    ln -s ~/dotfiles/bash_completion.d ~/.bash_completion.d
-    ln -s ~/dotfiles/aliases ~/.aliases
-    ln -s ~/dotfiles/irbrc ~/.irbrc
-    ln -s ~/dotfiles/pryrc ~/.pryrc
-    ln -s ~/dotfiles/gemrc ~/.gemrc
-    ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-    ln -s ~/dotfiles/conkyrc ~/.conkyrc
-    ln -s ~/dotfiles/zshrc ~/.zshrc
+```bash
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/profile ~/.profile
+ln -s ~/dotfiles/bashrc ~/.bashrc
+ln -s ~/dotfiles/bash_profile ~/.bash_profile
+ln -s ~/dotfiles/bash_completion ~/.bash_completion
+ln -s ~/dotfiles/bash_completion.d ~/.bash_completion.d
+ln -s ~/dotfiles/aliases ~/.aliases
+ln -s ~/dotfiles/inputrc ~/.inputrc
+ln -s ~/dotfiles/dircolors ~/.dircolors
+ln -s ~/dotfiles/urxvt ~/.urxvt
+ln -s ~/dotfiles/xinitrc ~/.xinitrc
+ln -s ~/dotfiles/Xresources ~/.Xresources
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
-    ln -s ~/dotfiles/agignore ~/.agignore
-    ln -s ~/dotfiles/gitignore ~/.gitignore
+ln -s ~/dotfiles/irbrc ~/.irbrc
+ln -s ~/dotfiles/pryrc ~/.pryrc
+ln -s ~/dotfiles/gemrc ~/.gemrc
+ln -s ~/dotfiles/ctags ~/.ctags
+ln -s ~/dotfiles/rspec ~/.rspec
+ln -s ~/dotfiles/psqlrc ~/.psqlrc
+ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
 
-    ln -s ~/dotfiles/bin ~/bin
-    ln -s ~/dotfiles/bash-git-prompt ~/.bash-git-prompt
-    ln -s ~/dotfiles/dircolors ~/.dircolors
-    ln -s ~/dotfiles/Xresources ~/.Xresources
+ln -s ~/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/gitignore ~/.gitignore
+ln -s ~/dotfiles/agignore ~/.agignore
 
+ln -s ~/dotfiles/bin ~/bin
+```
 
-# removing submodules
+# misc
+
+## removing submodules
 
 ```bash
 mv some-submodule _some-submodule
@@ -42,7 +48,7 @@ rm -rf _some-submodile
 
 It may also sometimes be necessary to manually remove the entry from `.gitmodules`
 
-# profiling vim
+## profiling vim
 
 ```vimscript
 :profile start profile.log
@@ -52,4 +58,3 @@ It may also sometimes be necessary to manually remove the entry from `.gitmodule
 :profile pause
 :noautocmd qall!
 ```
-
