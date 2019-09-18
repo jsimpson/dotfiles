@@ -1,22 +1,29 @@
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\e[1;5D": backward-word
+"\e\e[D":  backward-word
+"\e[1;5C": forward-word
+"\e\e[C":  forward-word
+
 #set input-meta on
 #set output-meta on
-
-set editing-mode vi
-$if mode=vi
-
-set show-mode-in-prompt on
-set vi-ins-mode-string \1\e[2 q\2
-set vi-cmd-mode-string \1\e[6 q\2
-
-set keymap vi-command
-Control-l: clear-screen
-Control-a: beginning-of-line
-
-set keymap vi-insert
-Control-l: clear-screen
-Control-a: beginning-of-line
-
-$endif
 #
+#set editing-mode vi
+#$if mode=vi
+#
+#set show-mode-in-prompt on
+#set vi-ins-mode-string "\1\e[2 q\2"
+#set vi-cmd-mode-string "\1\e[6 q\2"
+#
+#set keymap vi-command
+#Control-l: clear-screen
+#Control-a: beginning-of-line
+#
+#set keymap vi-insert
+#Control-l: clear-screen
+#Control-a: beginning-of-line
+#
+#$endif
+
 #Control-p: history-search-backward
 #Control-n: history-search-forward
