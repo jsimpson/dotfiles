@@ -28,6 +28,8 @@ ln -s ~/dotfiles/rspec ~/.rspec
 ln -s ~/dotfiles/psqlrc ~/.psqlrc
 ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
 
+ln -s ~/dotfiles/pycodestyle ~/.config/pycodestyle
+
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
 ln -s ~/dotfiles/agignore ~/.agignore

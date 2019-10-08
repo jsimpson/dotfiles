@@ -161,8 +161,9 @@ let g:ale_lint_on_save = 1
 
 let g:ale_linters = {
   \ 'elixir': ['elixir-ls'],
-  \ 'ruby': ['reek', 'ruby', 'standardrb', 'solargraph'] ,
   \ 'javascript': ['eslint'],
+  \ 'python': ['pycodestyle'] ,
+  \ 'ruby': ['reek', 'ruby', 'standardrb', 'solargraph'] ,
   \ }
 
 let g:ale_fixers = {
