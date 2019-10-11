@@ -29,6 +29,7 @@ ln -s ~/dotfiles/psqlrc ~/.psqlrc
 ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
 
 ln -s ~/dotfiles/pycodestyle ~/.config/pycodestyle
+ln -s ~/dotfiles/pylintrc ~/.pylintrc
 
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
