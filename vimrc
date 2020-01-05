@@ -1,7 +1,12 @@
 set nocp
 
 "plugins {{{1
-call plug#begin('$HOME/.vim/plugged')
+
+if has('nvim')
+    call plug#begin('~/vim/plugged')
+else
+    call plug#begin('$HOME/.vim/plugged')
+endif
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'w0rp/ale'
