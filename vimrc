@@ -1,7 +1,7 @@
 set nocp
 
 "plugins {{{1
-call plug#begin('$HOME/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'w0rp/ale'
@@ -190,4 +190,4 @@ let g:lightline = {
   \ }
 
 " use rbenv ruby
-let g:ruby_path = system('echo $HOME/.rbenv/shims')
+let g:ruby_path = system('echo ~/.rbenv/shims')
