@@ -2,8 +2,8 @@
     ui = true
 
 [user]
-    name = Jonathan Simpson
-    email = jsimpson.github@gmail.com
+	name = Jonathan Simpson
+	email = jsimpson.github@gmail.com
 
 [alias]
     st = status
@@ -18,3 +18,7 @@
 
 [merge]
     tool = vimdiff
+[credential]
+	helper = osxkeychain
+[core]
+	excludesFile = /Users/jonathan/.gitignore
