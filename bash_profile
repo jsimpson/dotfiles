@@ -23,7 +23,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH="$PATH:`yarn global bin`"
+export PATH="`yarn global bin`:$PATH"
 
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
