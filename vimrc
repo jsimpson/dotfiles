@@ -4,13 +4,14 @@ set nocp
 call plug#begin('~/.vim/plugged')
 
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'w0rp/ale'
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+"Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 
 Plug 'vim-ruby/vim-ruby'
-Plug 'elixir-editors/vim-elixir'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tbastos/vim-lua'
 
 Plug 'tpope/vim-rbenv'
@@ -155,27 +156,27 @@ if executable('ag')
 endif
 
 "ale, lint on save
-let g:ale_lint_on_text_changed = 0
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_save = 1
+"let g:ale_lint_on_text_changed = 0
+"let g:ale_lint_on_enter = 0
+"let g:ale_lint_on_save = 1
 
-let g:ale_linters = {
-  \ 'elixir': ['elixir-ls'],
-  \ 'javascript': ['eslint'],
-  \ 'python': ['pycodestyle', 'pyflakes', 'pylint'] ,
-  \ 'ruby': ['reek', 'ruby', 'standardrb', 'solargraph'] ,
-  \ }
+"let g:ale_linters = {
+"  \ 'elixir': ['elixir-ls'],
+"  \ 'javascript': ['eslint'],
+"  \ 'python': ['pycodestyle', 'pyflakes', 'pylint'] ,
+"  \ 'ruby': ['reek', 'ruby', 'standardrb', 'solargraph'] ,
+"  \ }
 
-let g:ale_fixers = {
-  \ 'ruby': ['standardrb'],
-  \}
-let g:ale_fix_on_save = 1
+"let g:ale_fixers = {
+"  \ 'ruby': ['standardrb'],
+"  \}
+"let g:ale_fix_on_save = 1
 
-let g:ale_elixir_elixir_ls_config = {
-  \ 'elixirLS': {
-  \   'dialyzerEnabled': v:false,
-  \ },
-  \ }
+"let g:ale_elixir_elixir_ls_config = {
+"  \ 'elixirLS': {
+"  \   'dialyzerEnabled': v:false,
+"  \ },
+"  \ }
 
 " lightline
 let g:lightline = {

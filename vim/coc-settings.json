@@ -1,11 +1,6 @@
 {
     "coc.preferences.diagnostic.enable": false,
     "coc.preferences.snippets.enable": false,
-    "languageserver": {
-        "elixirLS": {
-            "command": "/home/jsimpson/projects/elixir-ls/release/language_server.sh",
-            "filetypes": ["elixir", "eelixir"],
-            "dialyzerEnabled": false
-        }
-    }
+    "eslint.autoFixOnSave": false,
+    "prettier.disableSuccessMessage": true
 }
