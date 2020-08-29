@@ -3,4 +3,5 @@
 vim/.netrwhist
 vim/plugged/*
 secrets
-
+bin/nvim
+config/nvim/plugged/*
