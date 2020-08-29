@@ -2,25 +2,19 @@ set nocp
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'nanotech/jellybeans.vim'
+Plug 'morhetz/gruvbox'
 
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-Plug 'vim-ruby/vim-ruby'
+Plug 'sheerun/vim-polyglot'
+
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-bundler'
-
-Plug 'pangloss/vim-javascript'
-Plug 'jsimpson/vim-jsx-pretty'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'Vimjas/vim-python-pep8-indent'
 
@@ -36,13 +30,9 @@ call plug#end()
 syntax on
 filetype plugin indent on
 
-set termguicolors
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
 set background=dark
-highlight Normal guibg=Black
-colorscheme jellybeans
-
-" allow italics with jeallybeans.vim and palenight.vim
-let g:jellybeans_use_term_italics = 1
 
 " appearance
 set cursorline
@@ -135,7 +125,7 @@ let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 
 " lightline
 let g:lightline = {
-  \ 'colorscheme': 'jellybeans',
+  \ 'colorscheme': 'gruvbox',
   \ 'active': {
   \   'left': [
   \     [ 'mode', 'paste' ],
@@ -154,6 +144,3 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
-" set popup menu bg color to match jellybeans theme better
-hi Pmenu guibg=#1c1c1c
