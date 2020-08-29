@@ -1,6 +1,7 @@
 *.swp
 *~
 vim/.netrwhist
+config/nvim/.netrwhist
 vim/plugged/*
 secrets
 bin/nvim

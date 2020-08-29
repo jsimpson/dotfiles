@@ -19,6 +19,7 @@ Plug 'tpope/vim-bundler'
 Plug 'Vimjas/vim-python-pep8-indent'
 
 Plug 'itchyny/lightline.vim'
+Plug 'edkolev/tmuxline.vim'
 
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
